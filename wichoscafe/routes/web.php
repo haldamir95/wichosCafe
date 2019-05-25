@@ -11,8 +11,26 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('/homes', function () {
+    if( Auth::user() ){//se valida si esta logueado
+        if( Auth::user()->rol =='admin' ){//se valida el tipo de usuario
+            return redirect('/homeAdmin');
+        }elseif (Auth::user()->rol =='trabajador'){
+            return redirect('/home');
+        }
+
+    }else{
+        return view('welcome');
+    }
+        
+        
 });
 
 Auth::routes();
@@ -22,3 +40,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+//------------------ Modificar User
+Route::put('/user/{id}', 'HomeController@ModificarUser');
+//------------------ Mostrar Edicion User
+Route::get('/users/{id}', 'HomeController@mostrarUsersEditar');

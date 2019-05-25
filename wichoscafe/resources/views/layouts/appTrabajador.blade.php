@@ -43,12 +43,12 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item"><a href="{{ url('/homes') }}" class="nav-link">Home Admin</a></li>
+                            <li class="nav-item"><a href="{{ url('/homes') }}" class="nav-link">Home Trabajador</a></li>
                             <!--<li class="nav-item"><a href="#" class="nav-link"></a></li>-->
                         </ul>
                         <li class="dropdown">
                             <a href="#" class="nav-link" data-toggle="dropdown">
-                                Modulos Administrador <b class="caret"></b>
+                                Modulos Trabajador <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="{{ url('/proyectos') }}" class="nav-link">Modulo de Proyectos</a></li>
@@ -74,7 +74,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    Administrador: {{ Auth::user()->name }} <span class="caret"></span>
+                                    Trabajador: {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
