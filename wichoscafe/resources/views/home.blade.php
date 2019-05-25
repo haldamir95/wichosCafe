@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 @extends(
                     (Auth::user()->rol == 'trabajador' ? 'layouts.appTrabajador' : 
                         (Auth::user()->rol == 'cliente' ? 'layouts.appCliente' : 'layouts.appAdmin'))
     )
-=======
-@extends('layouts.Encabezado')
->>>>>>> d39d0b75fe85f78db98b50e2c78b25e5f4eb85c1
 
 @section('content')
 <div class="container">
