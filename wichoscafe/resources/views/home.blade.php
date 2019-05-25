@@ -19,7 +19,7 @@
                     
                     <table style="width:100%">
                         <tr>
-                            <td align="center">CAJA <br> <a href="#"><input type="image" src="\images\caja1.jpg" alt="Submit" width="100" height="100"></a></td>
+                            <td align="center">CAJA <br> <a href="/caja"><input type="image" src="\images\caja1.jpg" alt="Submit" width="100" height="100"></a></td>
                             <td align="center">BEBIDAS CALIENTES <br> <a href="#"><input type="image" src="\images\bebidacaliente1.jpg" alt="Submit" width="100" height="100"></a></td> 
                             <td align="center">PASTELES <br> <a href="#"><input type="image" src="\images\pastel1.jpg" alt="Submit" width="100" height="100"></a></td>
                         </tr>
